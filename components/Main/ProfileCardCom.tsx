@@ -19,15 +19,15 @@ export default function ProfileCardCom() {
     );
   };
 
-  const downloadPdf = () => {
-    const resumeLink = "/SAYEM MOLLA RESUME.pdf";
-    const link = document.createElement("a");
-    link.href = resumeLink;
-    link.download = "SayemMolla-resume.pdf"; // The name of the file to be downloaded
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const downloadPdf = () => {
+  //   const resumeLink = "/SAYEM MOLLA RESUME.pdf";
+  //   const link = document.createElement("a");
+  //   link.href = resumeLink;
+  //   link.download = "SayemMolla-resume.pdf"; // The name of the file to be downloaded
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div className="card card-compact w-96 h-fit bg-base-100 shadow-xl">
@@ -55,7 +55,7 @@ export default function ProfileCardCom() {
         <div className="w-full grid grid-cols-2 gap-2">
           {/* NEED TO UPDATE RESUME LINK */}
           <button
-            onClick={downloadPdf}
+            // onClick={downloadPdf}
             className="btn bg-[#28A745] text-white hover:bg-[#28A745] hover:text-white"
           >
             <span>
