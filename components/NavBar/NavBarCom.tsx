@@ -10,6 +10,7 @@ import {
   FolderGit2,
   Rss,
   Send,
+  CornerDownRight,
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -17,7 +18,7 @@ import { useState } from "react";
 export default function NavBarCom() {
   const [dark, setDark] = useState(false);
   return (
-    <div className="bg-white py-4 rounded-lg flex justify-evenly items-center shadow-lg">
+    <div className="bg-white py-3 rounded-lg flex justify-evenly items-center shadow-lg">
       <div className="text-2xl font-bold">Developer Sayem</div>
       <div className="flex justify-center items-center gap-2">
         <Link href="" className="btn btn-ghost text-md">
@@ -72,11 +73,11 @@ export default function NavBarCom() {
             </span>
           )}
         </button>
-        <button className="btn btn-primary">
-          <span>
-            <FileDown />
+        <button className=" btn bg-[#28A745] text-white hover:bg-[#28A745] hover:text-white font-bold">
+          Let&apos;s Talk
+          <span className="-rotate-45">
+            <CornerDownRight />
           </span>
-          Get Resume
         </button>
       </div>
     </div>

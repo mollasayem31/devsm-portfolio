@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
-
 import { cn } from "@/lib/utils";
 import NavBarCom from "@/components/NavBar/NavBarCom";
 import ProfileCardCom from "@/components/Main/ProfileCardCom";
@@ -31,7 +30,7 @@ export default function RootLayout({
       >
         <NavBarCom />
         <div className="flex flex-cols py-5">
-          {/* <ProfileCardCom /> */}
+          <ProfileCardCom />
           {children}
         </div>
       </body>
