@@ -75,7 +75,7 @@ export default function ProfileCardCom() {
         </div>
         <div className="flex justify-start items-center py-5 gap-3">
           <Link
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/sayem-molla/"
             rel="noopener noreferrer"
             target="_blank"
             className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2]"

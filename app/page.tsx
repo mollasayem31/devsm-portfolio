@@ -1,7 +1,15 @@
+import ProfileCardCom from "@/components/Main/ProfileCardCom";
+import ContactCardCom from "../components/Home/ContactCardCom";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Portfolio</h1>
+    <main className="">
+      <div>
+        <div>
+          <ProfileCardCom />
+          <ContactCardCom />
+        </div>
+      </div>
     </main>
   );
 }
