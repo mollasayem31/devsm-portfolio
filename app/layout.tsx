@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <body
         className={cn(
-          "min-h-screen bg-[#f2f2f2] font-sans antialiased p-5 max-w-[1600px] m-auto",
+          "min-h-screen bg-[#f2f2f2] font-sans antialiased p-5 max-w-[1440px] m-auto",
           fontSans.variable
         )}
       >

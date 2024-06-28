@@ -3,7 +3,7 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 export default function ContactCardCom() {
   return (
-    <div className="card card-compact w-96 h-fit bg-base-100 shadow-xl mt-5">
+    <div className="card card-compact bg-base-100 shadow-xl">
       <div className="card-body">
         <div className="bg-[#F0F2F5] py-3 m-2 rounded-lg pointer">
           <Marquee speed={150} pauseOnHover={true}>

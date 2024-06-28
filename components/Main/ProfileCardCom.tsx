@@ -9,7 +9,7 @@ import { Toaster, toast } from "sonner";
 
 export default function ProfileCardCom() {
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("your-email@example.com").then(
+    navigator.clipboard.writeText("developersayem012@gmail.com").then(
       () => {
         toast.success("Email address copied to clipboard!");
       },
@@ -30,18 +30,18 @@ export default function ProfileCardCom() {
   // };
 
   return (
-    <div className="card card-compact w-96 h-fit bg-base-100 shadow-xl">
-      <Toaster />
-      <div className="p-5 rounded-lg">
+    <div className="card card-compact  bg-base-100 shadow-xl">
+      <Toaster richColors />
+      <div className="">
         <figure>
           <Image
-            className="rounded-t-lg"
             src={ProfilePic}
             alt="Profile Picture"
             width={0}
             height={0}
             layout="responsive"
             sizes="100vw"
+            className="rounded-t-lg"
           />
         </figure>
       </div>
@@ -56,7 +56,7 @@ export default function ProfileCardCom() {
           {/* NEED TO UPDATE RESUME LINK */}
           <button
             // onClick={downloadPdf}
-            className="btn bg-[#28A745] text-white hover:bg-[#28A745] hover:text-white"
+            className="btn bg-[#28A745] text-white hover:bg-transparent hover:text-[#28A745] font-bold transition-colors ease-in-out duration-500"
           >
             <span>
               <FileDown />
@@ -65,7 +65,7 @@ export default function ProfileCardCom() {
           </button>
           <button
             onClick={copyToClipboard}
-            className="btn btn-outline hover:bg-[#f2f2f2] hover:text-black"
+            className="btn btn-outline hover:bg-[#f2f2f2] hover:text-black transition-colors ease-in-out duration-500 "
           >
             <span>
               <Copy />
@@ -78,9 +78,9 @@ export default function ProfileCardCom() {
             href="https://www.linkedin.com/in/sayem-molla/"
             rel="noopener noreferrer"
             target="_blank"
-            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2]"
+            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2] hover:text-[#28A745] transition-colors ease-in-out duration-500"
           >
-            <span className="hover:text-[#28A745]">
+            <span>
               <FaLinkedin />
             </span>
           </Link>
@@ -88,9 +88,9 @@ export default function ProfileCardCom() {
             href="https://github.com/developersayem"
             rel="noopener noreferrer"
             target="_blank"
-            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2]"
+            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2] hover:text-[#28A745] transition-colors ease-in-out duration-500"
           >
-            <span className="hover:text-[#28A745]">
+            <span>
               <FaGithub />
             </span>
           </Link>
@@ -98,9 +98,9 @@ export default function ProfileCardCom() {
             href="https://wa.me/01704878051"
             rel="noopener noreferrer"
             target="_blank"
-            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2]"
+            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2] hover:text-[#28A745] transition-colors ease-in-out duration-500"
           >
-            <span className="hover:text-[#28A745]">
+            <span>
               <FaWhatsapp />
             </span>
           </Link>
@@ -108,9 +108,9 @@ export default function ProfileCardCom() {
             href="https://www.facebook.com/sayemmolla.dev"
             rel="noopener noreferrer"
             target="_blank"
-            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2]"
+            className="flex justify-center items-center w-10 h-10 text-2xl border rounded-lg pointer hover:bg-[#f2f2f2] hover:text-[#28A745] transition-colors ease-in-out duration-500"
           >
-            <span className="hover:text-[#28A745]">
+            <span>
               <FaFacebook />
             </span>
           </Link>
